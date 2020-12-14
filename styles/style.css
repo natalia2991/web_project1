@@ -77,9 +77,9 @@ h1, h2, h3, p{
 
 .description{
   display: flex;
-  padding-top: 100px;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
 }
 
 
@@ -87,6 +87,7 @@ h1, h2, h3, p{
   width: 80%;
   display: flex;
   justify-content: space-between;
+  padding-top: 100px 0;
 }
 
 
@@ -129,7 +130,6 @@ h1, h2, h3, p{
 .digits{
   display: flex;
   flex-direction: column;
-
 }
 
 .section-title{
@@ -161,8 +161,8 @@ h1, h2, h3, p{
   flex-wrap: wrap;
   width: 1100px;
   margin: auto;
-  margin-bottom: 100px;
   justify-content: space-between;
+  padding-top: 100px;
 }
 
 
@@ -189,31 +189,38 @@ h1, h2, h3, p{
 
 .feynman{
   height: 790px;
-  display: flex;
-  flex-direction: column;
   opacity: .9;
+  margin: auto;
   position: relative;
   background-color: #f2f2f2;
-  align-items: center;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  margin-top: 100px;
+
 
 }
 
 .feynman__title{
-  z-index: 1;
   width: 775px;
   font-size: 120px;
   line-height: 1.15;
   font-weight: bold;
   text-align: center;
-  margin-top: 100px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  padding: 0;
+  
 }
 
 .feynman__subtitle{
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
-  margin-top: 70px;
+  text-align: center;
   z-index: 1;
+
+
 }
 
 .fenyman__link{
@@ -229,6 +236,7 @@ h1, h2, h3, p{
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 /* parameters for kaufman section */
@@ -242,33 +250,29 @@ h1, h2, h3, p{
   position: relative;
   opacity: .9;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  border: 1px solid red;
+  color: #f2f2f2;
+  align-items: center;
 }
 
 .section-title_theme_dark{
-  color: #f2f2f2;
-  display:flex;
-  justify-content: center;
-  text-align: center;
+
   width: 60%;
   margin: 90px auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  border: 1px solid red;
+  text-align: center;
+
 
 }
 
 .section-subtitle_theme_dark{
-  color: #f2f2f2;
-  display:flex;
-  justify-content: center;
   width: 60%;
-  margin: 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  border: 1px solid red;
+  text-align: center;
+
 }
 
 .table_theme_dark{
@@ -277,7 +281,6 @@ h1, h2, h3, p{
   justify-content: space-between;
   width: 1100px;
   margin: 0 auto 90px;
-  border: 1px solid red;
 
 }
 
@@ -285,8 +288,6 @@ h1, h2, h3, p{
   width: 200px;
   color: white;
   margin-top: 80px;
-  border: 1px solid red;
-
 }
 
 .table__heading_theme_dark{
@@ -311,6 +312,6 @@ h1, h2, h3, p{
   height: 877px;
   width: 877px;;
   z-index: -1;
-  border: 1px solid red;
+
 
 }
