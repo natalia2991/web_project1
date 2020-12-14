@@ -12,6 +12,8 @@ h1, h2, h3, p{
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: #000000;
+
 }
 
 /* parameters for the header section */
@@ -195,8 +197,6 @@ h1, h2, h3, p{
   background-color: #f2f2f2;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   margin-top: 100px;
-
-
 }
 
 .feynman__title{
@@ -210,7 +210,6 @@ h1, h2, h3, p{
   top: 100px;
   z-index: 1;
   padding: 0;
-  
 }
 
 .feynman__subtitle{
@@ -219,8 +218,6 @@ h1, h2, h3, p{
   font-weight: normal;
   text-align: center;
   z-index: 1;
-
-
 }
 
 .fenyman__link{
@@ -248,22 +245,18 @@ h1, h2, h3, p{
   height: 100%;
   flex-direction: column;
   position: relative;
-  opacity: .9;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #f2f2f2;
   align-items: center;
 }
 
 .section-title_theme_dark{
-
   width: 60%;
   margin: 90px auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-
-
 }
 
 .section-subtitle_theme_dark{
@@ -272,7 +265,6 @@ h1, h2, h3, p{
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-
 }
 
 .table_theme_dark{
@@ -280,13 +272,11 @@ h1, h2, h3, p{
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
-  margin: 0 auto 90px;
-
+  padding: 90px auto;
 }
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-top: 80px;
 }
 
@@ -295,6 +285,8 @@ h1, h2, h3, p{
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -302,6 +294,8 @@ h1, h2, h3, p{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -311,7 +305,21 @@ h1, h2, h3, p{
   right: -210px;
   height: 877px;
   width: 877px;;
-  z-index: -1;
+  z-index: 1;
+}
 
+/* parameters for footer section */
 
+.footer{
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  flex-basis: 711px;
+  min-height: 350px;
+}
+
+.footer__columns{
+width: 90%;
+margin: auto;
+padding-top: 60px;
+padding-bottom: 40px;
 }
