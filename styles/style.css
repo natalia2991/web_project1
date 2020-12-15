@@ -171,6 +171,7 @@ h1, h2, h3, p{
   justify-content: space-between;
   margin: auto;
   margin-bottom: 100px;
+
 }
 
 .table__cell{
@@ -190,8 +191,6 @@ h1, h2, h3, p{
   font-size: 18px;
   font-weight: normal;
 }
-
-
 /* parameters for feynman section */
 
 .feynman{
@@ -212,7 +211,7 @@ h1, h2, h3, p{
   text-align: center;
   margin: auto;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .feynman__subtitle{
