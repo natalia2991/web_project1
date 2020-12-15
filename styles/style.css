@@ -13,7 +13,11 @@ h1, h2, h3, p{
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #000000;
+}
+/*had to add it as my browser was changing font family to New Times Roman in all sections after the header*/
 
+.content, .footer{
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 /* parameters for the header section */
@@ -33,17 +37,21 @@ h1, h2, h3, p{
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 5;
 }
 
 .header__title {
   width: 730px;
-  margin: 0 0 0 64px;
+  display: flex;
+  align-items: center;
   position: absolute;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-
+  z-index: 4;
+  margin-left: 64px;
 }
+
 .header__subtitle {
   max-width: 388px;
   line-height: 25px;
@@ -54,6 +62,12 @@ h1, h2, h3, p{
   bottom: 30px;
   margin: 0;
   padding: 0;
+  z-index: 3;
+}
+
+.header__link{
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -62,7 +76,7 @@ h1, h2, h3, p{
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__square-pic{
@@ -76,7 +90,6 @@ h1, h2, h3, p{
 
 /* parameters for description section */
 
-
 .description{
   display: flex;
   align-items: center;
@@ -84,14 +97,11 @@ h1, h2, h3, p{
   padding-top: 100px;
 }
 
-
 .two-columns{
   width: 80%;
   display: flex;
   justify-content: space-between;
-  padding-top: 100px 0;
 }
-
 
 .two-columns__brief{
   width: 175px;
@@ -125,8 +135,6 @@ h1, h2, h3, p{
 .two-columns__paragraph:nth-child(3){
   margin-top: 30px;
 }
-
-
 /* parameters for digits section */
 
 .digits{
@@ -137,11 +145,9 @@ h1, h2, h3, p{
 .section-title{
   display: flex;
   width: 60%;
-  margin: auto;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin: 100px auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -162,11 +168,10 @@ h1, h2, h3, p{
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
-  margin: auto;
   justify-content: space-between;
-  padding-top: 100px;
+  margin: auto;
+  margin-bottom: 100px;
 }
-
 
 .table__cell{
   width: 250px;
@@ -195,7 +200,7 @@ h1, h2, h3, p{
   margin: auto;
   position: relative;
   background-color: #f2f2f2;
-  margin-top: 100px;
+  padding-top: 100px;
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
@@ -208,7 +213,6 @@ h1, h2, h3, p{
   margin: auto;
   padding: 0;
   z-index: 1;
-  padding-top: 100px;
 }
 
 .feynman__subtitle{
@@ -219,7 +223,6 @@ h1, h2, h3, p{
   z-index: 1;
   margin: auto;
   margin-top: 70px;
-
 }
 
 .fenyman__link{
@@ -229,6 +232,8 @@ h1, h2, h3, p{
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .feynman__image{
@@ -250,9 +255,8 @@ h1, h2, h3, p{
   flex-direction: column;
   position: relative;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  color: #f2f2f2;
+  color: white;
   align-items: center;
-
 }
 
 .section-title_theme_dark{
@@ -277,7 +281,8 @@ h1, h2, h3, p{
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
-  margin: 90px auto;
+  margin: auto;
+  margin-bottom: 90px;
 }
 
 .table__cell_theme_dark{
@@ -300,7 +305,6 @@ h1, h2, h3, p{
   font-weight: normal;
   position: relative;
   z-index: 2;
-
 }
 
 .kaufman__triangle{
@@ -308,7 +312,7 @@ h1, h2, h3, p{
   top: 0;
   right: -210px;
   height: 877px;
-  width: 877px;;
+  width: 877px;
   z-index: 1;
 }
 
@@ -316,29 +320,73 @@ h1, h2, h3, p{
 
 .footer{
   background-color: #1f1f1f;
-  color: #f2f2f2;
-  min-height: 350px;
+  color: white;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 
 }
 
 .footer__columns{
-width: 90%;
-display: flex;
-justify-content: space-between;
-margin: 60px 0 40px;
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 40px;
+ }
+
+.logo__place_footer{
+  width: 183px;
+  height: 35px;
 }
 
 .footer__column_content_copyright{
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.footer__column_content_info
-{
+
+.footer__author{
+  margin: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+}
+
+
+.footer__column-heading{
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 0;
 
 }
 
-.footer__column-links ul{
+.footer__column-links{
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  height: 10px;
+}
+
+.footer__column-links{
+  margin: 20px 0 16px;
+}
+
+.footer__column-links a{
+  color: white;
   text-decoration: none;
 }
 
+.footer__social-icon{
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+
+}
