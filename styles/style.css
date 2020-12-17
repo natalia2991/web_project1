@@ -11,6 +11,7 @@
 }
 
 /* parameters for the header section */
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -19,6 +20,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  z-index: 1;
 }
 
 .logo_place_header {
@@ -27,22 +29,24 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 5;
 }
 
 .header__title {
   padding:0;
   margin: 0;
-  width: 730px;
+  width:100%;
+  max-width: 730px;
   align-self: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  z-index: 4;
   margin-left: 64px;
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   max-width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -50,9 +54,6 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  margin: 0;
-  padding: 0;
-  z-index: 3;
 }
 
 .header__link{
@@ -66,7 +67,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 2;
 }
 
 .header__square-pic{
@@ -76,6 +76,7 @@
   position: absolute;
   top: 64px;
   right: 0;
+  z-index: -1;
 }
 
 /* parameters for description section */
@@ -94,7 +95,10 @@
 }
 
 .two-columns__brief{
-  width: 175px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 175px;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -107,10 +111,13 @@
 }
 
 .two-columns__paragraph{
+  margin: 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 30px;
+
 }
 
 .two-columns__span-accent{
@@ -131,6 +138,8 @@
 }
 
 .section-title{
+  margin: 0;
+  padding: 0;
   width: 60%;
   text-align: center;
   margin: auto;
@@ -141,6 +150,8 @@
   }
 
 .section-subtitle{
+  margin: 0;
+  padding: 0;
   text-align: center;
   width: 60%;
   margin: auto;
@@ -167,12 +178,16 @@
 }
 
 .table__heading{
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text{
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -194,17 +209,21 @@
 }
 
 .feynman__title{
+  margin: 0;
+  padding: 0;
+  width: 100%;
   max-width: 775px;
   font-size: 120px;
   line-height: 1.15;
   font-weight: bold;
   text-align: center;
   margin: auto;
-  padding: 0;
   z-index: 2;
 }
 
 .feynman__subtitle{
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -250,6 +269,8 @@
 }
 
 .section-title_theme_dark{
+  margin: 0;
+  padding: 0;
   width: 60%;
   margin: 90px auto 20px;
   line-height: 1.15;
@@ -259,6 +280,8 @@
 }
 
 .section-subtitle_theme_dark{
+  margin: 0;
+  padding: 0;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -281,6 +304,8 @@
 }
 
 .table__heading_theme_dark{
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
@@ -290,6 +315,8 @@
 }
 
 .table__text_theme_dark{
+  margin: 0;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -312,21 +339,21 @@
 /* parameters for footer section */
 
 .footer{
+  box-sizing: border-box;
   background-color: #1f1f1f;
   color: white;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   min-height: 350px;
-
+  padding: 60px 0 40px;
 }
 
 .footer__columns{
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 40px;
- }
+}
 
 .logo__place_footer{
   width: 183px;
@@ -341,6 +368,8 @@
 }
 
 .footer__author{
+  margin: 0;
+  padding: 0;
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -350,15 +379,17 @@
 
 
 .footer__column-heading{
+  margin: 0;
+  padding: 0;
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
-  margin: 0;
-  padding-top: 0;
+
 
 }
 
 .footer__column-links{
+  margin: 0;
   padding: 0;
   list-style-type: none;
   line-height: 30px;
