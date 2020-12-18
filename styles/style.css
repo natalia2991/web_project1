@@ -106,7 +106,7 @@
 }
 
 .two-columns__main-text{
-  width: 80px;
+  width: 80%;
   min-width: 784px;
 }
 
@@ -126,7 +126,7 @@
   font-weight: bold;
 }
 
-.two-columns__paragraph:nth-last-child(1){
+.two-columns__paragraph:last-child{
   margin-bottom: 0;
 }
 /* parameters for digits section */
@@ -141,8 +141,7 @@
   padding: 0;
   width: 60%;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -183,9 +182,8 @@
 }
 
 .table__text{
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
-  margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -257,39 +255,10 @@
   height: 100%;
   flex-direction: column;
   position: relative;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
   color: white;
   align-items: center;
   z-index: 1;
   padding: 90px 0;
-}
-
-.section-title_theme_dark{
-  padding: 0;
-  width: 60%;
-  margin: 0px auto 20px;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.section-subtitle_theme_dark{
-  margin: 0;
-  padding: 0;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-}
-
-.table_theme_dark{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1100px;
-  margin: auto;
 }
 
 .table__cell_theme_dark{
@@ -298,22 +267,13 @@
 }
 
 .table__heading_theme_dark{
-  margin: 0;
-  padding: 0;
   margin-bottom: 20px;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
   position: relative;
   z-index: 2;
 }
 
 .table__text_theme_dark{
   margin: 0;
-  padding: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   position: relative;
   z-index: 2;
 }
@@ -349,7 +309,7 @@
   justify-content: space-between;
 }
 
-.logo__place_footer{
+.logo_place_footer{
   width: 183px;
   height: 35px;
 }
@@ -398,7 +358,7 @@
 }
 
 .footer__social-icon{
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
 }
