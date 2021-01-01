@@ -6,8 +6,10 @@
   position:absolute;
   top: 0;
   left: 648px;
-
-
+  transition: color 1s linear 2s;
 }
 
+.khan__buy-link:hover{
+  opacity: .6;
+}
 
