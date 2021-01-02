@@ -3,9 +3,8 @@
   font-size: 30px;
   font-weight: normal;
   color: #2f80ed;
-  position:absolute;
-  top: 0;
-  left: 648px;
+  vertical-align: top;
+  margin-left: 48px;
   transition: color 1s linear 2s;
 }
 
